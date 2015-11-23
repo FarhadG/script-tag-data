@@ -7,7 +7,7 @@ Set and read data from a `<script>` tag
 
 Bower
 ```bash
-# bower install script-tag-data --save
+$ bower install script-tag-data --save
 ```
 
 CDN
