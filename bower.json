@@ -1,7 +1,7 @@
 {
   "name": "script-tag-data",
   "description": "Set and read data from a `<script>` tag",
-  "main": "script-tag-data.js",
+  "main": "script-tag-data.min.js",
   "authors": [
     "farhad ghayour"
   ],

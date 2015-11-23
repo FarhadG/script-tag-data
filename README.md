@@ -5,13 +5,13 @@ Set and read data from a `<script>` tag
 
 ### Installation
 
-- Bower
-```shell
-bower install script-tag-data --save
+Bower
+```bash
+# bower install script-tag-data --save
 ```
 
 CDN
-```
+```html
 <script src="https://cdn.rawgit.com/FarhadG/script-tag-data/master/script-tag-data.min.js"></script>
 ```
 
