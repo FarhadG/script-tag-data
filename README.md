@@ -5,7 +5,9 @@ Set and read data from a `<script>` tag
 
 ### Usage
 
-`<script src="https://cdn.com/lib-name.js" id="lib-name" data-weather="sunny" data... /></script>`
+```html
+<script src="https://cdn.com/lib-name.js" id="lib-name" data-weather="sunny" data... /></script>
+```
 
 Provide the user / app a simple `<script>` tag, a CSS `#id` and whatever data points as HTML5 `data` attributes.
 
@@ -25,18 +27,17 @@ Some website with your `<script>` tag, an ID and the desired data points.
 <body>
     ...
 
-    <script id="your-library" src="./your-library.js" data-weather="sunny" data-car="pagani" data-star-repo="yes, please :)">
+    <script id="your-library" src="./your-library.js" data-car="pagani" data-star-repo="yes, please :)">
 </body>
 </html>
 ```
 
-Your JS file where you have ScriptTagData library loaded by either referencing from here on <a href="http://www.github.com/script-tag-data/script-tag-data.min.js" target="_blank">GitHub</a> or serving it yourself.
+Your JS file where you have ScriptTagData library loaded by either referencing from here on <a href="https://raw.githubusercontent.com/FarhadG/script-tag-data/master/script-tag-data.min.js" target="_blank">GitHub</a> or serving it yourself.
 ```javascript
 /**
  * This returns the following:
  *
  * {
- *   weather: 'sunny',
  *   car: 'pagani',
  *   starRepo: 'yes, please :)'
  * }
