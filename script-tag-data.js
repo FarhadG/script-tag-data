@@ -2,8 +2,6 @@
 
 var ScriptTagData = ScriptTagData || (function() {
 
-    ScriptTagData.version = '0.0.1';
-
     /**
      * Returns all of the data attributes from a given script ID
      *
