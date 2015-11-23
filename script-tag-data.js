@@ -1,3 +1,5 @@
+'use strict';
+
 var ScriptTagData = ScriptTagData || (function() {
 
 		ScriptTagData.version = '0.0.1';

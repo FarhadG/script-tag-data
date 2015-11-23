@@ -5,8 +5,52 @@ Set JavaScript <script> tag data & read it inside your JS file/library
 
 ### Usage
 
-To come...
+`<script src="https://cdn.com/lib-name.js" id="lib-name" data-weather="sunny" data... /></script>`
+
+Provide the user / app a simple `<script>` tag, a CSS `#id` and whatever data points as HTML5 `data` attributes.
+
+- Get all of the data values from the <script> tag: `ScriptTagData.getData(scriptId)`
+- Only get the <script> tag: `ScriptTagData.getScript(scriptId)`
 
 ### Examples
 
-To come...
+Some website with your <script> tag, an ID and the desired data points.
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+    ...
+
+    <script id="your-library" src="./your-library.js" data-weather="sunny" data-car="pagani" data-star-repo="yes, please :)">
+</body>
+</html>
+```
+
+Your JS file where you have ScriptTagData library loaded by either referencing from here on GitHub or serving it yourself.
+```javascript
+/**
+ * This returns the following:
+ *
+ * {
+ *   weather: 'sunny',
+ *   car: 'pagani',
+ *   starRepo: 'yes, please :)'
+ * }
+ */
+
+ScriptTagData.getData('your-library');
+
+/**
+ * This returns the juust <script> tag
+ */
+
+ScriptTagData.getData('your-library');
+```
+
+### Questions
+
+Please use issues page for any questions or concerns.
