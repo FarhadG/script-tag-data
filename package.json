@@ -1,7 +1,7 @@
 {
   "name": "script-tag-data",
   "version": "0.0.1",
-  "description": "Set JavaScript <script> tag data & read it inside your JS file/library",
+  "description": "Set and read data from a `<script>` tag",
   "main": "script-tag-data.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,6 +10,7 @@
     "type": "git",
     "url": "https://www.github.com/farhadg/script-tag-data"
   },
+  "homepage": "https://www.github.com/farhadg/script-tag-data",
   "keywords": [
     "script",
     "tag",
