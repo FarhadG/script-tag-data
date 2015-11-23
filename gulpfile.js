@@ -14,7 +14,7 @@ var config = {
 // minify and write contents to `.min.js` file
 gulp.task('scripts', function() {
 	gulp.src(config.src)
-			.pipe(jshint());
+			.pipe(jshint())
 			.pipe(uglify())
 			.pipe(rename(config.min))
 			.pipe(gulp.dest(config.dest));
