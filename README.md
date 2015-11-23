@@ -32,7 +32,7 @@ Some website with your `<script>` tag, an ID and the desired data points.
 </html>
 ```
 
-Your JS file where you have ScriptTagData library loaded by either referencing from here on <a href="https://raw.githubusercontent.com/FarhadG/script-tag-data/master/script-tag-data.min.js" target="_blank">GitHub</a> or serving it yourself.
+Your JS file where you have ScriptTagData library loaded by either referencing from here on <a href="https://cdn.rawgit.com/FarhadG/script-tag-data/master/script-tag-data.min.js" target="_blank">GitHub</a> or serving it yourself.
 ```javascript
 /**
  * This returns the following:
