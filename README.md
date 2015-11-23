@@ -1,7 +1,7 @@
 Script Tag Data
 ===============
 
-Set and read data from a <script> tag
+Set and read data from a `<script>` tag
 
 ### Usage
 
@@ -9,12 +9,12 @@ Set and read data from a <script> tag
 
 Provide the user / app a simple `<script>` tag, a CSS `#id` and whatever data points as HTML5 `data` attributes.
 
-- Get all of the data values from the <script> tag: `ScriptTagData.getData(scriptId)`
-- Only get the <script> tag: `ScriptTagData.getScript(scriptId)`
+- Get all of the data values from a `<script>` tag: `ScriptTagData.getData(scriptId)`
+- Only get the `<script>` tag: `ScriptTagData.getScript(scriptId)`
 
 ### Examples
 
-Some website with your <script> tag, an ID and the desired data points.
+Some website with your `<script>` tag, an ID and the desired data points.
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -30,7 +30,7 @@ Some website with your <script> tag, an ID and the desired data points.
 </html>
 ```
 
-Your JS file where you have ScriptTagData library loaded by either referencing from here on GitHub or serving it yourself.
+Your JS file where you have ScriptTagData library loaded by either referencing from here on <a href="http://www.github.com/script-tag-data/script-tag-data.min.js" target="_blank">GitHub</a> or serving it yourself.
 ```javascript
 /**
  * This returns the following:
