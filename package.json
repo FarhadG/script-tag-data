@@ -1,6 +1,6 @@
 {
   "name": "script-tag-data",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Set and read data from a `<script>` tag",
   "main": "script-tag-data.js",
   "scripts": {
