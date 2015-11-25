@@ -43,7 +43,7 @@ var ScriptTagData = ScriptTagData || (function() {
     function getData(scriptId, silent) {
       var script = getScript(scriptId);
       if (!script) {
-        silent || _warnMessage(scriptId);
+        silent && _warnMessage(scriptId);
         return null;
       }
       var data = {};
