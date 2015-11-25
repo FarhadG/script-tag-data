@@ -18,32 +18,29 @@ var ScriptTagData = ScriptTagData || (function() {
      * Returns all of the data attributes from a given script ID
      *
      * @param scriptId
-     * @param silent
      * @returns {*}
      */
 
-    function getScript(scriptId, silent) {
+    function getScript(scriptId) {
       var scripts = document.getElementsByTagName('script');
       for (var i = 0, len = scripts.length; i < len; i++) {
         var script = scripts[i];
         var id = script.getAttribute('id');
         if (id === scriptId) return scripts[i];
       }
-      return silent ? null : _warnMessage(scriptId);
+      return _warnMessage(scriptId);
     }
 
     /**
      * Returns the script tag based on the given script ID
      *
-     * @param silent
      * @param scriptId
      * @returns {{}}
      */
 
-    function getData(scriptId, silent) {
+    function getData(scriptId) {
       var script = getScript(scriptId);
       if (!script) {
-        silent && _warnMessage(scriptId);
         return null;
       }
       var data = {};
@@ -66,4 +63,4 @@ var ScriptTagData = ScriptTagData || (function() {
       getData: getData
     };
 
-}());
+  }());
