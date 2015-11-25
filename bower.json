@@ -1,7 +1,7 @@
 {
   "name": "script-tag-data",
   "description": "Set and read data from a `<script>` tag",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "main": "script-tag-data.min.js",
   "authors": [
     "farhad ghayour"
@@ -23,5 +23,8 @@
     "public/lib",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "script-tag-data": "~0.0.5"
+  }
 }
