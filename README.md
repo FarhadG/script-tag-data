@@ -1,7 +1,7 @@
 <a href="https://farhadg.github.io/script-tag-data" target="_blank">Script Tag Data</a>
 =======================================================================================
 
-Set and read data from a `<script>` tag. You can check this out being used in my <a href="https://www.github.com/farhadg/repo-card target="_blank">Repo Card</a> project.
+Set and read data from a `<script>` tag. You can check this out being used in my <a href="https://www.github.com/farhadg/repo-card" target="_blank">Repo Card</a> project.
 
 ### Installation
 
