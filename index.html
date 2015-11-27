@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Script Tag Data by FarhadG</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Script Tag Data</h1>
+      <h2 class="project-tagline">Set JavaScript &lt;script&gt; tag data &amp; read it inside your JS file/library</h2>
+      <a href="https://github.com/FarhadG/script-tag-data" class="btn">View on GitHub</a>
+      <a href="https://github.com/FarhadG/script-tag-data/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/FarhadG/script-tag-data/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="script-tag-data" class="anchor" href="#script-tag-data" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="https://farhadg.github.io/script-tag-data" target="_blank">Script Tag Data</a>
+</h1>
+
+<p>Set and read data from a <code>&lt;script&gt;</code> tag. You can check this out being used in my <a href="https://www.github.com/farhadg/repo-card" target="_blank">Repo Card</a> project.</p>
+
+<h3>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h3>
+
+<p>Bower</p>
+
+<div class="highlight highlight-source-shell"><pre>$ bower install script-tag-data --save</pre></div>
+
+<p>CDN</p>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>https://rawgit.com/FarhadG/script-tag-data/master/script-tag-data.min.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</pre></div>
+
+<h3>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h3>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>https://cdn.com/lib-name.js<span class="pl-pds">"</span></span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>lib-name<span class="pl-pds">"</span></span> <span class="pl-e">data-weather</span>=<span class="pl-s"><span class="pl-pds">"</span>sunny<span class="pl-pds">"</span></span> <span class="pl-e">data</span>... /&gt;&lt;/<span class="pl-ent">script</span>&gt;</pre></div>
+
+<p>Provide the user / app a simple <code>&lt;script&gt;</code> tag, a CSS <code>#id</code> and whatever data points as HTML5 <code>data</code> attributes.</p>
+
+<ul>
+<li>Get all of the data values from a <code>&lt;script&gt;</code> tag: <code>ScriptTagData.getData(scriptId)</code>
+</li>
+<li>Only get the <code>&lt;script&gt;</code> tag: <code>ScriptTagData.getScript(scriptId)</code>
+</li>
+</ul>
+
+<h3>
+<a id="examples" class="anchor" href="#examples" aria-hidden="true"><span class="octicon octicon-link"></span></a>Examples</h3>
+
+<p>Some website with your <code>&lt;script&gt;</code> tag, an ID and the desired data points.</p>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;!DOCTYPE html&gt;
+&lt;<span class="pl-ent">html</span> <span class="pl-e">lang</span>=<span class="pl-s"><span class="pl-pds">"</span>en<span class="pl-pds">"</span></span>&gt;
+&lt;<span class="pl-ent">head</span>&gt;
+  &lt;<span class="pl-ent">meta</span> <span class="pl-e">charset</span>=<span class="pl-s"><span class="pl-pds">"</span>UTF-8<span class="pl-pds">"</span></span>&gt;
+  &lt;<span class="pl-ent">title</span>&gt;Title&lt;/<span class="pl-ent">title</span>&gt;
+&lt;/<span class="pl-ent">head</span>&gt;
+&lt;<span class="pl-ent">body</span>&gt;
+    ...
+
+<span class="pl-s1">    &lt;<span class="pl-ent">script</span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>your-library<span class="pl-pds">"</span></span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>./your-library.js<span class="pl-pds">"</span></span> <span class="pl-e">data-car</span>=<span class="pl-s"><span class="pl-pds">"</span>pagani<span class="pl-pds">"</span></span> <span class="pl-e">data-star-repo</span>=<span class="pl-s"><span class="pl-pds">"</span>yes, please :)<span class="pl-pds">"</span></span>&gt;</span>
+<span class="pl-s1"><span class="pl-k">&lt;</span><span class="pl-k">/</span>body<span class="pl-k">&gt;</span></span>
+<span class="pl-s1"><span class="pl-k">&lt;</span><span class="pl-k">/</span>html<span class="pl-k">&gt;</span></span></pre></div>
+
+<p>Your JS file where you have ScriptTagData library loaded by either referencing from here on <a href="https://cdn.rawgit.com/FarhadG/script-tag-data/master/script-tag-data.min.js" target="_blank">GitHub</a> or serving it yourself.</p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-c">/**</span>
+<span class="pl-c"> * This returns the following:</span>
+<span class="pl-c"> *</span>
+<span class="pl-c"> * {</span>
+<span class="pl-c"> *   car: 'pagani',</span>
+<span class="pl-c"> *   starRepo: 'yes, please :)'</span>
+<span class="pl-c"> * }</span>
+<span class="pl-c"> */</span>
+
+<span class="pl-smi">ScriptTagData</span>.<span class="pl-en">getData</span>(<span class="pl-s"><span class="pl-pds">'</span>your-library<span class="pl-pds">'</span></span>);
+
+<span class="pl-c">/**</span>
+<span class="pl-c"> * This returns the just &lt;script&gt; tag</span>
+<span class="pl-c"> */</span>
+
+<span class="pl-smi">ScriptTagData</span>.<span class="pl-en">getData</span>(<span class="pl-s"><span class="pl-pds">'</span>your-library<span class="pl-pds">'</span></span>);</pre></div>
+
+<h3>
+<a id="questions" class="anchor" href="#questions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Questions</h3>
+
+<p>Please use issues page for any questions or concerns.</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/FarhadG/script-tag-data">Script Tag Data</a> is maintained by <a href="https://github.com/FarhadG">FarhadG</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
